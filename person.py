@@ -20,7 +20,7 @@ person_1 = Person(input('Введите свое имя: '))
 def add_info():
     with open('Что я сегодня делал.txt', 'a', encoding='utf-8') as file:
         file.writelines(f"{person_1.name}: {datetime.today().strftime('%d.%m.20%y')} - "
-                        f"{input('Чем сегодня занимались?: ')}")
+                        f"{input('Чем сегодня занимались?: ')}\n")
 
 
 if __name__ == '__main__':
